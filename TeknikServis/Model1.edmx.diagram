@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="75f40554c3d04595bc4a46ba3061b2fb" Name="Diagram1" ZoomLevel="94">
+        <EntityTypeShape EntityType="DbTeknikServisModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLADMIN" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLCARI" Width="1.5" PointX="3" PointY="25.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLDEPARTMAN" Width="1.5" PointX="0.75" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLFATURABILGI" Width="1.5" PointX="5.25" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLFATURADETAY" Width="1.5" PointX="7.5" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLGIDER" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLIL" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLILCE" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLKATEGORI" Width="1.5" PointX="3.75" PointY="32" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLNOTLARIM" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLPERSONEL" Width="1.5" PointX="3" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLURUN" Width="1.5" PointX="6" PointY="31" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLURUNHAREKET" Width="1.5" PointX="8.25" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLURUNKABUL" Width="1.5" PointX="5.25" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLURUNTAKIP" Width="1.5" PointX="8.25" PointY="31.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLARACLAR" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLFATURABILGI_TBLCARI" ManuallyRouted="false" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLURUNHAREKET_TBLCARI" ManuallyRouted="false" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLURUNKABUL_TBLCARI" ManuallyRouted="false" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLPERSONEL_TBLDEPARTMAN" ManuallyRouted="false" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLFATURABILGI_TBLPERSONEL" ManuallyRouted="false" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLFATURADETAY_TBLFATURABILGI" ManuallyRouted="false" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_SEHIR" ManuallyRouted="false" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLURUN_TBLKATEGORI" ManuallyRouted="false" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLURUNHAREKET_TBLPERSONEL" ManuallyRouted="false" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLURUNKABUL_TBLPERSONEL" ManuallyRouted="false" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLURUNHAREKET_TBLURUN" ManuallyRouted="false" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLURUNTAKIP_TBLURUN" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLHAKKIMIZDA" Width="1.5" PointX="2.75" PointY="6.75" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLILETISIM" Width="1.5" PointX="6.75" PointY="3.75" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLARIZAFATURA1" Width="1.5" PointX="10.5" PointY="24.125" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLARIZADETAY_TBLURUNKABUL" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLARIZAFATURADETAY" Width="1.5" PointX="12.75" PointY="25.125" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLARIZAFATURADETAY_TBLARIZAFATURA" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLARIZAFATURADETAY_TBLARIZAFATURA1" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLSATINALMAFATURASIBILGI" Width="1.5" PointX="8.25" PointY="15" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLSATINALMAFATURASIDETAY" Width="1.5" PointX="10.5" PointY="15.5" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLSATINALMAFATURASIDETAY_TBLSATINALMAFATURASIBILGI" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLSATINALMAFATURASIBILGI_TBLCARI" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLSATINALMAFATURASIBILGI_TBLPERSONEL" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLFATURATIPLERI" Width="1.5" PointX="3" PointY="12.625" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLMALALIMFATURASI" Width="1.5" PointX="13.5" PointY="19.75" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLMALSATIMFATURASI" Width="1.5" PointX="16.5" PointY="19.75" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLSABITKIYMET" Width="1.5" PointX="11.25" PointY="20.25" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLARIZAFATURA_TBLFATURATIPLERI" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLFATURABILGI_TBLFATURATIPLERI" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLMALALIMFATURASI_TBLFATURATIPLERI" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLMALSATIMFATURASI_TBLFATURATIPLERI" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLSATINALMAFATURASIBILGI_TBLFATURATIPLERI" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLMALALIMFATURASI_TBLSABITKIYMET" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLMALSATIMFATURASI_TBLSABITKIYMET" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLFISTIPI" Width="1.5" PointX="4.75" PointY="6.75" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLMALALIMFATURASI_TBLPERSONEL" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLMALSATIMFATURASI_TBLPERSONEL" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLSABITKIYMET_TBLPERSONEL" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLMALALIMFATURASI_TBLCARI" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLMALSATIMFATURASI_TBLCARI" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLSABITKIYMET_TBLFATURATIPLERI" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLURUNHAREKETSATINALMA" Width="1.5" PointX="5.25" PointY="24.125" IsExpanded="true" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLURUNHAREKETSATINALMA_TBLCARI" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLURUNHAREKETSATINALMA_TBLPERSONEL" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLURUNHAREKETSATINALMA_TBLURUN" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLIADEFATURASI" Width="1.5" PointX="8.25" PointY="24.5" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLIADEFATURASI_TBLCARI" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLIADEFATURASI_TBLFATURATIPLERI" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLIADEFATURASI_TBLPERSONEL" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLIADEFATURASI_TBLURUN" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLARIZAFATURA_TBLCARI" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLARIZAFATURA_TBLPERSONEL" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLIRSALIYE" Width="1.5" PointX="11.25" PointY="30" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLIRSALIYE_TBLCARI" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLIRSALIYE_TBLURUN" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLKULLANICI" Width="1.5" PointX="7.375" PointY="6.75" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLYETKIDURUMU" Width="1.5" PointX="9.375" PointY="1.25" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLYETKITANIM" Width="1.5" PointX="11.625" PointY="4" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLYETKITANIM_TBLKULLANICI" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_TBLYETKITANIM_TBLYETKIDURUMU" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

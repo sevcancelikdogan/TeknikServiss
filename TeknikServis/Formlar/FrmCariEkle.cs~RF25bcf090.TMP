@@ -1,0 +1,56 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace TeknikServis.Formlar
+{
+    public partial class FrmCariEkle : Form
+    {
+        public FrmCariEkle()
+        {
+            InitializeComponent();
+        }
+
+      
+        private void BtnVazgeç_Click(object sender, EventArgs e)
+        {
+            Formlar.FrmCariEkle fr = new Formlar.FrmCariEkle();
+            this.Close();
+        }
+
+       
+
+        private void BtnKaydet_Click(object sender, EventArgs e)
+        {
+            DbTeknikServisEntities db = new DbTeknikServisEntities();
+            TBLCARI t = new TBLCARI();
+            t.AD = TxtCariAd.Text;
+            t.SOYAD = TxtCariSoyadı.Text;
+            t.TELEFON = TxtTelefon.Text;
+            t.IL = TxtIl.EditValue.ToString();
+            t.ILCE = TxtIlce.EditValue.ToString();
+            t.BANKA = TxtBanka.Text;
+            t.VERGIDAIRESI = TxtVergiDairesi.Text;
+            t.VERGINO = TxtVergiNumarası.Text;
+            t.STATU = TxtStatu.Text;
+            db.TBLCARI.Add(t);
+            db.SaveChanges();
+            MessageBox.Show("Ürün Başarıyla Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+        }
+
+    
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+            Formlar.FrmYeniUrun fr = new Formlar.FrmYeniUrun();
+            this.Close();
+        }
+    }
+}
